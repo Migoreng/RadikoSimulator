@@ -1,6 +1,6 @@
 #!/bin/bash
 
-source settings
+source $HOME/RadikoSimulator/settings
 
 ##################################################
 ##########　Needless to modify below.   ##########

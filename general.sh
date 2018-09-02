@@ -21,7 +21,7 @@
 # | sed -e "s/<title>\(.*\)<\/title>/\1/" | sort | uniq
 # ＊＊＊grep -eの行を増やして絞り込みをいくらでも可能にすることができる＊＊＊
 
-source settings
+source $HOME/RadikoSimulator/settings
 
 
 cd $(dirname $0)
