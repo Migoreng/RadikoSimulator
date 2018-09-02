@@ -18,7 +18,7 @@
 # wget -q -O - http://radiko.jp/v3/program/station/weekly/$station.xml | \
 # grep -e "<title>.*</title>" | \
 # grep -e 速水 -e 中西 \
-# | sed -e "s/<title>\(.*\)<\/title>/\1/" | sort | uniq
+# | sed -e "s/<title>\(.*\)<\/title>/\1/" -e "s/\s//g" | sort | uniq
 # ＊＊＊grep -eの行を増やして絞り込みをいくらでも可能にすることができる＊＊＊
 
 source $HOME/RadikoSimulator/settings
