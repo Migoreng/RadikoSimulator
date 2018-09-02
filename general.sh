@@ -201,6 +201,7 @@ mkdir -p $bookingdir/$station
 cat <<BOOKING > $bookingdir/$station/$next_date && \
 chmod +x $bookingdir/$station/$next_date && \
 cnt=$((cnt + 1))
+#この行からBOOKINGまでの間が予約票の中身です。必要であれば他のスクリプトを実行する記述などを加えることができます。基本的に変更する必要はありません。
 echo "A Booking was created successfully." || echo "Booking error occurred!"
 #!/bin/bash
 
