@@ -1,0 +1,117 @@
+#!/bin/bash
+
+#　　【RadikoSimulator用録音予約クッションスクリプト】
+#録音予約の帳票を作成したのち、このスクリプトによって全ての帳票が指定日時に叩かれる
+#このスクリプトはcrontabで毎分叩かれる必要がある
+#2018年03月04日 
+source $HOME/RadikoSimulator/settings
+
+cd $(dirname $0); pwd
+CT=$(date '+%Y%m%d%H%M')
+
+bash $bookingdir/HBC/$CT 2>/dev/null
+bash $bookingdir/STV/$CT 2>/dev/null
+bash $bookingdir/AIR-G/$CT 2>/dev/null
+bash $bookingdir/NORTHWAVE/$CT 2>/dev/null
+bash $bookingdir/RAB/$CT 2>/dev/null
+bash $bookingdir/AFB/$CT 2>/dev/null
+bash $bookingdir/IBC/$CT 2>/dev/null
+bash $bookingdir/FMI/$CT 2>/dev/null
+bash $bookingdir/TBC/$CT 2>/dev/null
+bash $bookingdir/DATEFM/$CT 2>/dev/null
+bash $bookingdir/ABS/$CT 2>/dev/null
+bash $bookingdir/YBC/$CT 2>/dev/null
+bash $bookingdir/RFC/$CT 2>/dev/null
+bash $bookingdir/FMF/$CT 2>/dev/null
+bash $bookingdir/JOHK/$CT 2>/dev/null
+bash $bookingdir/JOHK-FM/$CT 2>/dev/null
+bash $bookingdir/TBS/$CT 2>/dev/null
+bash $bookingdir/QRR/$CT 2>/dev/null
+bash $bookingdir/LFR/$CT 2>/dev/null
+bash $bookingdir/INT/$CT 2>/dev/null
+bash $bookingdir/FMT/$CT 2>/dev/null
+bash $bookingdir/FMJ/$CT 2>/dev/null
+bash $bookingdir/JORF/$CT 2>/dev/null
+bash $bookingdir/BAYFM78/$CT 2>/dev/null
+bash $bookingdir/NACK5/$CT 2>/dev/null
+bash $bookingdir/YFM/$CT 2>/dev/null
+bash $bookingdir/IBS/$CT 2>/dev/null
+bash $bookingdir/CRT/$CT 2>/dev/null
+bash $bookingdir/RADIOBERRY/$CT 2>/dev/null
+bash $bookingdir/FMGUNMA/$CT 2>/dev/null
+bash $bookingdir/JOAK/$CT 2>/dev/null
+bash $bookingdir/JOAB/$CT 2>/dev/null
+bash $bookingdir/JOAK-FM/$CT 2>/dev/null
+bash $bookingdir/BSN/$CT 2>/dev/null
+bash $bookingdir/FMNIIGATA/$CT 2>/dev/null
+bash $bookingdir/FMPORT/$CT 2>/dev/null
+bash $bookingdir/KNB/$CT 2>/dev/null
+bash $bookingdir/FMTOYAMA/$CT 2>/dev/null
+bash $bookingdir/MRO/$CT 2>/dev/null
+bash $bookingdir/HELLOFIVE/$CT 2>/dev/null
+bash $bookingdir/FBC/$CT 2>/dev/null
+bash $bookingdir/YBS/$CT 2>/dev/null
+bash $bookingdir/FM-FUJI/$CT 2>/dev/null
+bash $bookingdir/SBC/$CT 2>/dev/null
+bash $bookingdir/FMN/$CT 2>/dev/null
+bash $bookingdir/CBC/$CT 2>/dev/null
+bash $bookingdir/TOKAIRADIO/$CT 2>/dev/null
+bash $bookingdir/GBS/$CT 2>/dev/null
+bash $bookingdir/ZIP-FM/$CT 2>/dev/null
+bash $bookingdir/RADIONEO/$CT 2>/dev/null
+bash $bookingdir/FMAICHI/$CT 2>/dev/null
+bash $bookingdir/FMGIFU/$CT 2>/dev/null
+bash $bookingdir/SBS/$CT 2>/dev/null
+bash $bookingdir/K-MIX/$CT 2>/dev/null
+bash $bookingdir/FMMIE/$CT 2>/dev/null
+bash $bookingdir/ABC/$CT 2>/dev/null
+bash $bookingdir/MBS/$CT 2>/dev/null
+bash $bookingdir/OBC/$CT 2>/dev/null
+bash $bookingdir/CCL/$CT 2>/dev/null
+bash $bookingdir/802/$CT 2>/dev/null
+bash $bookingdir/FMO/$CT 2>/dev/null
+bash $bookingdir/KISSFMKOBE/$CT 2>/dev/null
+bash $bookingdir/CRK/$CT 2>/dev/null
+bash $bookingdir/E-RADIO/$CT 2>/dev/null
+bash $bookingdir/KBS/$CT 2>/dev/null
+bash $bookingdir/ALPHA-STATION/$CT 2>/dev/null
+bash $bookingdir/WBS/$CT 2>/dev/null
+bash $bookingdir/BSS/$CT 2>/dev/null
+bash $bookingdir/RSK/$CT 2>/dev/null
+bash $bookingdir/RCC/$CT 2>/dev/null
+bash $bookingdir/HFM/$CT 2>/dev/null
+bash $bookingdir/KRY/$CT 2>/dev/null
+bash $bookingdir/JRT/$CT 2>/dev/null
+bash $bookingdir/RNC/$CT 2>/dev/null
+bash $bookingdir/FMKAGAWA/$CT 2>/dev/null
+bash $bookingdir/RNB/$CT 2>/dev/null
+bash $bookingdir/JOEU-FM/$CT 2>/dev/null
+bash $bookingdir/RKC/$CT 2>/dev/null
+bash $bookingdir/JOFK/$CT 2>/dev/null
+bash $bookingdir/JOFK-FM/$CT 2>/dev/null
+bash $bookingdir/JOZK/$CT 2>/dev/null
+bash $bookingdir/JOZK-FM/$CT 2>/dev/null
+bash $bookingdir/RKB/$CT 2>/dev/null
+bash $bookingdir/KBC/$CT 2>/dev/null
+bash $bookingdir/LOVEFM/$CT 2>/dev/null
+bash $bookingdir/CROSSFM/$CT 2>/dev/null
+bash $bookingdir/FMFUKUOKA/$CT 2>/dev/null
+bash $bookingdir/NBC/$CT 2>/dev/null
+bash $bookingdir/FMNAGASAKI/$CT 2>/dev/null
+bash $bookingdir/RKK/$CT 2>/dev/null
+bash $bookingdir/FMK/$CT 2>/dev/null
+bash $bookingdir/OBS/$CT 2>/dev/null
+bash $bookingdir/FM_OITA/$CT 2>/dev/null
+bash $bookingdir/MRT/$CT 2>/dev/null
+bash $bookingdir/MBC/$CT 2>/dev/null
+bash $bookingdir/MYUFM/$CT 2>/dev/null
+bash $bookingdir/RBC/$CT 2>/dev/null
+bash $bookingdir/ROK/$CT 2>/dev/null
+bash $bookingdir/FM_OKINAWA/$CT 2>/dev/null
+bash $bookingdir/JOLK/$CT 2>/dev/null
+bash $bookingdir/JOLK-FM/$CT 2>/dev/null
+bash $bookingdir/RN1/$CT 2>/dev/null
+bash $bookingdir/RN2/$CT 2>/dev/null
+bash $bookingdir/HOUSOU-DAIGAKU/$CT 2>/dev/null
+
+exit 0

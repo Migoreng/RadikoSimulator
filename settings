@@ -1,0 +1,24 @@
+# RadikoSimulator用一括設定スクリプト
+# このファイルはbashファイルであるが、直接実行されるものではない
+
+
+
+###radikoreco.sh###
+###radikoplay.sh###
+###radikopast.sh###
+radiodate=`date +%Y%m%d%H%M`                    # Append date of recording started
+#defaultdir="/tmp/RadikoSimulatorRecordings"    # Specify default directory to put recordings
+keyfile="$(dirname $0)/PartialKey/aSmartPhone6v5.0.6.bin"   # Specify necessarily the corresponded partialkey to work
+
+###general.sh###
+###cussion###
+#使用者の設定
+RECdir="$HOME/REC"
+bookingdir="$HOME/booking"
+radirecodir="$HOME/RadikoSimulator/radikoreco.sh"
+
+###Check ###
+[ -e $bookingdir ] && echo 'OK:Booking Directory Exists' || echo 'NG:Booking Directory NOT found' 2>> ./errlog
+[ -e $radikorecodir ] && echo 'OK:radikoreco.sh Exists' || echo 'NG:radikoreco.sh NOT found' 2>> ./errlog
+[ -e $keyfile ] && echo 'OK:keyfile Exists' || echo 'NG:keyfile NOT found' 2>> ./errlog
+[ -e $RECdir ] && echo 'OK:RECdir Exists' || echo 'NG:RECdir NOT found' 2>> ./errlog
