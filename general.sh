@@ -202,10 +202,26 @@ cat <<BOOKING > $bookingdir/$station/$next_date && \
 chmod +x $bookingdir/$station/$next_date && \
 cnt=$((cnt + 1))
 #!/bin/bash
-#この行からBOOKINGまでの間が予約票の中身です。必要であれば他のスクリプトを実行する記述などを加えることができます。基本的に変更する必要はありません。
+#上1行のシバンからBOOKINGまでの間が予約票の中身です。必要であれば他のスクリプトを実行する記述などをここに加えることができます。基本的に変更する必要はありません。
+#たとえば、録音したファイルを自動的にクラウドストレージアップロードする、メールで録音完了のメッセージを送信するといった使い方をするためにはここに記述するといいでしょう。
+#クラウドアップロードの例(rcloneコマンドで録音したファイルをGoogleDriveにアップロードする)
+#rclone copy "＄HOME/REC/＄program/＄program$next_date" remote:＜録音ファイルのアップロード先パス＞
+#megatoolsコマンドを使ってMEGAにアップロードする例
+#megatools put --no-progress --path "＜録音ファイルのアップロード先パス＞" "＄HOME/REC/＄program/＄program$next_date"
+#うまく使うと複数アカウントを録音ファイルごとに使い分けたり、容量がいっぱいになったら容量がいっぱいのアカウントに自動的に切り替えるといった動作を実現することができます。
+#このスクリプト内の変数全てを使うことができ、変数は展開されて予約票になります。
+#＄radirecodirはradikoreco.shを呼び出すパス
+#＄stationは放送局コード(TOKYOFMならFMT、文化放送ならQRRなど)
+#＄locationは都道府県(東京都ならTokyo、長崎県ならNagasakiなど)
+#＄durationは録音時間の分単位
+#＄programは「番組名」
+#です。上記は全角の＄で表していることに注意してください。(ヒアドキュメント内なので変数展開されてしまうため、わざとそうしています。)
+#このコメントは録音には影響を与えませんが、予約票に書かれてしまうのでうっとおしい場合はシバン行を一応残しておいてコメント行を削除してください。
+
 
 $radirecodir -s $station -l $location -t $duration -p '$program'
- 
+
+#BOOKING行より下には何も書かないでください。
 BOOKING
 
 else
