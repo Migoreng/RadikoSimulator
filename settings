@@ -7,7 +7,7 @@
 ###radikoplay.sh###
 ###radikopast.sh###
 radiodate=`date +%Y%m%d%H%M`                    # Append date of recording started
-#defaultdir="/tmp/RadikoSimulatorRecordings"    # Specify default directory to put recordings
+defaultdir="$HOME/REC"    # Specify default directory to put recordings
 keyfile="$(dirname $0)/PartialKey/aSmartPhone6v5.0.6.bin"   # Specify necessarily the corresponded partialkey to work
 
 ###general.sh###

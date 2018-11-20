@@ -181,7 +181,7 @@ wget -nv \
 
 echo 'Downloading completion may take few minutes.'
 echo -e "\e[7m Press 'Ctrl + C' to stop this recording. \e[m"
-grep https $(dirname $0)/cache/past/tmp_${pid} | wget -i - -O - 2>/dev/null | wget -nv -i - -O ${outdir}/${VALUE_P}${VALUE_F}.aac 2>/dev/null
+grep https $(dirname $0)/cache/past/tmp_${pid} | wget -i - -O - 2>/dev/null | wget -nv -i - -O $RECdir/${VALUE_P}/${VALUE_P}_${VALUE_F}.aac 2>/dev/null
 
 #
 # Show Detail while processing
