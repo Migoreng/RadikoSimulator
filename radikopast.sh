@@ -179,6 +179,8 @@ wget -nv \
     https://radiko.jp/v2/api/ts/playlist.m3u8?station_id=${VALUE_S}\&l=15\&ft=${VALUE_F}\&to=${VALUE_E}\&seek=${VALUE_F} \
     2>/dev/null
 
+[ $? -ne 0 ] && echo "****A status is not 200****" && exit
+
 echo 'Downloading completion may take few minutes.'
 echo -e "\e[7m Press 'Ctrl + C' to stop this recording. \e[m"
 grep https $(dirname $0)/cache/past/tmp_${pid} | wget -i - -O - 2>/dev/null | wget -nv -i - -O $RECdir/${VALUE_P}/${VALUE_P}_${VALUE_F}.aac 2>/dev/null
