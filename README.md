@@ -42,3 +42,4 @@ All versions are available in those functions.
 
 # Others
 [Blog](http://eurekamigoreng.blog.fc2.com)
+[Note](https://note.com/pax_fox/n/n944b2f50f58a)
