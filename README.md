@@ -20,7 +20,7 @@ ffmpegを使用して放送をリアルタイムで録音します。
 * vlc
 
 ## radikopast.sh
-wgetを使用してタイムシフト(見逃し配信)を保存します。
+wgetを使用してタイムシフト(聞き逃し配信)を保存します。
 
 ### 必要なもの
 * wget
@@ -76,7 +76,7 @@ $ ./radikoreco.sh -s <放送局コード> -l <都道府県> -t <分> -p <録音�
 $ ./radikoreco.sh -s NBC -l Nagasaki -t 30 -p "じげらナイトキャンラジ"
 ```
 
-## タイムシフト保存(見逃し配信を保存)
+## タイムシフト保存(聞き逃し配信を保存)
 ```bash
 $ ./radikopast.sh -s <放送局コード> -l <都道府県> -f <放送開始日時(yyyymmddHHMMSS)> -e <放送終了日時(yyyymmddHHMMSS)> -p <録音を保存するファイル名>
 ```
