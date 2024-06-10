@@ -57,7 +57,7 @@ $ cd RadikoSimulator
 
 ## リアルタイム視聴
 ```bash
-$ ./radikoplay.sh <放送局コード> <当道府県>
+$ ./radikoplay.sh <放送局コード> <都道府県>
 ```
 
 長崎エリアを指定してNBCを聴く場合
