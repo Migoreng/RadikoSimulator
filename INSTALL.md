@@ -4,8 +4,8 @@
 - Termux 0.118.1 ( 2024.06.21 updated )
 
 ## Install and set up Termux on your Android device 
-You should install Termux from **f-Droid**
-**Don't install the one from Google Play store** because it doesn't work properly and it's too old.
+You should install Termux from **f-Droid**  
+**Don't install the one from Google Play store** because it doesn't work properly and it's too old.  
 If you don't let Termux access your storage, run this command.
 ```bash
 temux-setup-storage
