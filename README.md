@@ -92,6 +92,11 @@ $ ./radikopast.sh -s NBC -l Nagasaki -f 20180203203000 -e 20180203210000 -p "じ
 5時間を超える録音の場合エラーが発生して保存に失敗する可能性がある
 
 
+# 紹介記事
+[サポートページ：Raspberry Piでロボット製作 コミュニケーションロボットSIROの製作日誌：｜技術評論社](https://gihyo.jp/book/2024/978-4-297-14315-2/support)
+[公式Blog](http://eurekamigoreng.blog.fc2.com)
+[Note](https://note.com/pax_fox/n/n944b2f50f58a)
+
 --- 
 # English
 # RadikoSimulator
@@ -136,6 +141,4 @@ This script creates directories for booking form scripts to put in and does exec
 # PartialKey
 All versions are available in those functions.
 
-# Others
-[Blog](http://eurekamigoreng.blog.fc2.com)
-[Note](https://note.com/pax_fox/n/n944b2f50f58a)
+
